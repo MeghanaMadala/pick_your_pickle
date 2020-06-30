@@ -12,7 +12,7 @@
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #43af8b;
+  background: #e9a558;
   color: floralwhite;
 }
 address {
@@ -49,4 +49,17 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px;
+}
+
+.modal-header {
+  background-color: #8b3d3d;
+  color: floralwhite;
+}
+
+.modal-body {
+  background: #e9a558;
+}
+
+.modal-header button {
+  color: floralwhite;
 }
