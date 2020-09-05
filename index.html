@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="css/styles.css">
      <!-- endbuild -->
 
-     <title>Ristorante Con Fusion</title>
+     <title>Pick Your Pickle</title>
 </head>
 
 <body>
@@ -24,12 +24,11 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mr-auto" href="#"></a><img src="img/logo.png" height="30" width="41"></a>
+        <a class="navbar-brand mr-auto" href="#"></a><img src="img/logo.png" height="10" width="10"></a>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li> 
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li> 
     
             </ul>
@@ -85,7 +84,7 @@
     <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Reserve a Table</h4>
+                <h4 class="modal-title">Place Order</h4>
                 <button type="button" class="close" data-dismiss="modal">
                     &times;
                 </button>
@@ -93,48 +92,48 @@
             <div class="modal-body">
                 <form> 
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label">Number of Guests</label>
+                        <label class="col-md-2 col-form-label">Choose your pickle</label>
                         <div class="col-md-10 align-self-center">
                             <input type="radio" id="1" name="Guests" value="1">
-                            <label for="1">1</label>
+                            <label for="1">Amla</label>
                             <input type="radio" id="2" name="Guests" value="2">
-                            <label for="2">2</label>
+                            <label for="2">Lemon</label>
                             <input type="radio" id="3" name="Guests" value="3">
-                            <label for="3">3</label>
+                            <label for="3">Tomato</label>
                             <input type="radio" id="4" name="Guests" value="4">
-                            <label for="4">4</label>
+                            <label for="4">Mango</label>
                             <input type="radio" id="5" name="Guests" value="5">
-                            <label for="5">5</label>
-                            <input type="radio" id="6" name="Guests" value="6">
-                            <label for="6">6</label>
+                            <label for="5">Gongura</label>
+                            
                         </div>
                     </div> 
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label">Section: </label>
+                        <label class="col-md-2 col-form-label">Country: </label>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-success active">
-                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> India
                             </label>
                             <label class="btn btn-danger">
-                              <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Overseas
                             </label>
+                            
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="date" class="col-12 col-md-2 col-form-label">Date</label>
+                        <label for="city" class="col-12 col-md-2 col-form-label">City</label>
                         <div class="col-5 col-md-3">
-                            <input type="date" class="form-control" id="date" name="date"
-                            placeholder="Date">
+                            <input type="text" class="form-control" id="city" name="city"
+                            placeholder="Enter your city">
                         </div>
                         <div class="col-7 col-md-7">
-                            <input type="time" class="form-control" id="time" name="time"
-                            placeholder="Time">
+                            <input type="text" class="form-control" id="address" name="address"
+                            placeholder="Enter your address">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-10 offset-md-2">
                             <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Place Order</button>
                         </div>
                     </div>
                 </form>
@@ -147,15 +146,15 @@
     <div class="container">
         <div class="row row-header">
             <div class="col-12 col-sm-6">
-                <h1>Ristorante con Fusion</h1>
-                <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                <h1>Pick Your Pickle</h1>
+                <p>Our pickles make your culinary senses tickle!</p>
             </div>
             <div class="col-12 col-sm align-self-center">
                 <img src="img/logo.png" class="img-fluid">
             </div>
             <div class="col-12 col-sm align-self-center">
                 <a role="button" class="btn btn-block nav-link btn-warning" 
-                id="reserveButton">Reserve Table
+                id="reserveButton">Place Order
                 </a>
             </div>
         </div>
@@ -169,27 +168,27 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <img class="d-block img-fluid"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                            src="img/amla.png" alt="Amla">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
-                            <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            <h2>Amla <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">Rs.400</span></h2>
+                            <p class="d-none d-sm-block">Made from freshly picked Amla fruits from the gardens of Odisha, this pickle has gained enough fame to find its place amongst our most requested pickles!</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block img-fluid"
-                            src="img/buffet.png" alt="buffet">
+                            src="img/promo.png" alt="buffet">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Weekend Grand Buffet <span class="badge badge-danger">HOT</span></h2>
-                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            <h2>Weekend Grand Sale <span class="badge badge-danger">HOT</span></h2>
+                            <p class="d-none d-sm-block">Featuring mouthwatering combinations, you can take home any pickle at just Rs.250/- per jar!</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block img-fluid"
-                        src="img/alberto.png" alt="alberto">
+                        src="img/sunil.png" alt="alberto">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Alberto Somayya</h2>
+                            <h2>Sunil Madala</h2>
                             <h4>Executive Chef</h4>
-                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            <p class="d-none d-sm-block">Award winning chef,Sunil, loves cooking and spends his free time experimenting with various recipes. His famous words are, "Even grass tastes excellent if you cook with love!"</p>
                         </div>
                     </div>
                 </div>
@@ -210,57 +209,72 @@
             </div>
         </div>
     </div>
+    <h2>Our Menu</h2>
     <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Our Lipsmacking Culinary Creations</h3>
-        </div>
         <div class="col col-sm order-sm-first col-md">
             <div class="media">
                 <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img/uthappizza.png" alt="Uthappizza">
+                    src="img/tomato.png" alt="Tomato">
                 <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    <h2 class="mt-0">Tomato <span class="badge badge-pill badge-default">Rs.300/-</span></h2>
+                    <p class="d-none d-sm-block">Made from freshly picked, ripe and plump tomatoes, this pickle is going to make your come back for more!</p>
+                </div>               
+            </div>               
+        </div>
+    </div>
+    
+    <div class="row row-content align-items-center">
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/amla.png" alt="Amla">
+                <div class="media-body">
+                    <h2 class="mt-0">Amla <span class="badge badge-pill badge-default">Rs.400/-</span></h2>
+                    <p class="d-none d-sm-block">Made from freshly picked Amla fruits from the gardens of Odisha, this pickle has gained enough fame to find its place amongst our most requested pickles!</p>
+                </div>               
+            </div>               
+        </div>
+    </div>
+    
+    <div class="row row-content align-items-center">
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/lemon.png" alt="Lemon">
+                <div class="media-body">
+                    <h2 class="mt-0">Lemon <span class="badge badge-pill badge-default">Rs.280/-</span></h2>
+                    <p class="d-none d-sm-block">A unique fusion of sweet,spicy and tangy,the lemon pickle can be eaten with anything from idli to rice!</p>
+                </div>               
+            </div>               
+        </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/mango.png" alt="Mango">
+                <div class="media-body">
+                    <h2 class="mt-0">Mango <span class="badge badge-pill badge-default">Rs.450/-</span></h2>
+                    <p class="d-none d-sm-block">The all-time classic mango pickle is a must in every household! Tastes exactly like your mother's homemade recipe!</p>
+                </div>               
+            </div>               
+        </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/gongura.png" alt="Gongura">
+                <div class="media-body">
+                    <h2 class="mt-0">Gongura <span class="badge badge-pill badge-default">Rs.300/-</span></h2>
+                    <p class="d-none d-sm-block">The spicy gongura pickle is a must-want in every South Indian wedding! Made from freshly picked gongura leaves and garnished with fried garlic and mustard seeds.Yumm!</p>
                 </div>               
             </div>               
         </div>
     </div>
 
-
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-            <h3>This Month's Promotions</h3>
-        </div>
-        <div class="col col-sm col-md">
-            <div class="media">
-                <div class="media-body">
-                    <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">HOT</span></h2>
-                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                </div>
-                <img class="d-flex ml-3 img-thumbnail align-self-center"
-                    src="img/buffet.png" alt="buffet">
-            </div>               
-        </div>
-    </div>
-
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Meet our Culinary Specialists</h3>
-        </div>
-        <div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img/alberto.png" alt="alberto">
-                <div class="media-body">
-                    <h2>Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-                </div>
-            </div>          
-        </div>
-    </div>
+    
 </div>
-
 <footer class="footer">
     <div class="container">
         <div class="row">             
@@ -276,12 +290,12 @@
             <div class="col-7 col-sm-5">
                 <h5>Our Address</h5>
                 <address>
-		            121, Clear Water Bay Road<br>
-		            Clear Water Bay, Kowloon<br>
-		            HONG KONG<br>
-		            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-		            <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		            1-11, Gopalapatnam<br>
+		            Visakhapatnam<br>
+		            Andhra Pradesh,India<br>
+		            <i class="fa fa-phone fa-lg"></i>: +123 45 7890<br>
+		            <i class="fa fa-fax fa-lg"></i>: +123 45 7890<br>
+		            <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:pick_your_pickle@pickle.net">pick_your_pickle@pickle.net</a>
 		        </address>
             </div>
             <div class="col-12 col-sm-4 align-self-center">
@@ -297,7 +311,7 @@
         </div>
         <div class="row justify-content-center">             
             <div class="col-auto">
-                <p>© Copyright 2018 Ristorante Con Fusion</p>
+                <p>© Copyright 2020 Pick Your Pickle</p>
             </div>
         </div>
     </div>
